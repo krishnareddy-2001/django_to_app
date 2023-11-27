@@ -20,11 +20,13 @@ sudo apt install docker.io -y
 ```
 Dockerfile is used to build image in docker 
 NO need to copy this ,its already there
+```bash
 FROM python:3                          #base image used 
 RUN pip install django==3.2            #commands to be executed
 COPY . .                               #for copying files  in container 
 CMD ["python","manage.py","runserver","0.0.0.0:8000"]   
-EXPOSE 8000                             #exposing port for serving  
+EXPOSE 8000                             #exposing port for serving
+```
 
 docker needs to create image run,
 ```bash
