@@ -20,16 +20,10 @@ INSTALL DOCKER TO PERFORM DOCKER COMMANDS
 ```bash
 sudo apt install docker.io -y
 ```
-TO GIVE ALL PERMISSIONS TO DOCKER RUN COMMANDs
-TO UPDATE SYSTEM 
-```bash
-sudo usermod -aG docker $USER
-sudo reboot
-```
 NOW BUILD THE DOCKER IMAGE AND RUN THE CONTAINER
 ```bash
-sudo docker build . -t TODOAPP
-sudo docker run -d -p 8000:8000 TODOAPP
+sudo docker build . -t todoapp
+sudo docker run -d -p 8000:8000 todoapp
 ```
 NOW COPY THE PUBLIC IP OF INSTANCE AND PORT 127.0.0.1:8000 ON LOCAL HOST
 SUCCESSFULLY DEPLOYED WEB APP ON DOCKER.
