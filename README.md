@@ -20,6 +20,15 @@ INSTALL DOCKER TO PERFORM DOCKER COMMANDS
 ```bash
 sudo apt install docker.io -y
 ```
+DOCKER FILE IS USED TO BUILT DOCKER IMAGE 
+```bash
+FROM python:3                          #base image used 
+RUN pip install django==3.2            #commands to be executed
+COPY . .                               #for copying files  in container 
+CMD ["python","manage.py","runserver","0.0.0.0:8000"]   
+EXPOSE 8000                             #exposing port for serving  
+
+```
 NOW BUILD THE DOCKER IMAGE AND RUN THE CONTAINER
 ```bash
 sudo docker build . -t todoapp
