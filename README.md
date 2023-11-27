@@ -46,7 +46,7 @@ sudo docker ps
 ```
 now copy the ip and add : port 8000
 successfully deployed django todo app
-
+(https://raw.githubusercontent.com/krishnareddy-2001/django-to_app/develop/staticfiles/Screenshot 2023-11-27110056.png)
 In exception cases
 if permissions denied in above commands,run 
 sudo usermod -aG  docker $USER
