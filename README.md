@@ -83,7 +83,7 @@ jenkins port number is 8080 to begin with jenkins
 now u have to setup jenkins in GUI(graphical user interface) and work on it
 
 ```bash
-sudo cat /var/lib/jenkins/secrets/initialAdminPasswor
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 u will get the password
 copy and paste it in gui jenkins interface to start
