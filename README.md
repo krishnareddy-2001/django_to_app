@@ -1,9 +1,8 @@
 # django-todo
-A simple todo app built with django
+A simple todo app built with django on ec2 instance ubuntu server in aws account
 
 ![todo App](https://raw.githubusercontent.com/shreys7/django-todo/develop/staticfiles/todoApp.png)
 ### Setup
-launch an ec2 instance ubuntu server on aws account
 ```bash
 sudo apt-get update
 ```
@@ -57,6 +56,41 @@ sudo usermod -aG  docker $USER
 sudo reboot
 wait for some time or refresh tab after some time 
 then execute above commands
+
+now automating this code through jenkins 
+####SETUP
+installing jenkins on the server
+```bash
+cd
+sudo apt update
+sudo apt install fontconfig openjdk-17-jre
+java -version
+openjdk version "17.0.8" 2023-07-18
+OpenJDK Runtime Environment (build 17.0.8+7-Debian-1deb12u1)
+OpenJDK 64-Bit Server VM (build 17.0.8+7-Debian-1deb12u1, mixed mode, sharing)
+```
+then run,
+```bash
+sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
+  https://pkg.jenkins.io/debian/jenkins.io-2023.key
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt-get update
+sudo apt-get install jenkins
+```
+Now to check and start jenkins 
+```bash
+sudo systemctl enable jenkins
+sudo systemctl start jenkins
+sudo systemctl status jenkins
+```
+Enter ctrl+c to exit
+Now go to the browser with ip:8080
+jenkins port number is 8080 to begin with jenkins
+now u have to setup jenkins in GUI(graphical user interface) and work on it
+
+
 
 
 
