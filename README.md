@@ -13,7 +13,7 @@ git clone https://github.com/krishnareddy-2001/django_to_app.git
 ```
 now go to the django_to_app folder 
 ```bash
-sudo cd  django_to_app
+cd  django_to_app
 ```
 NOW YOU CAN SEE THE DOCKER FILE WHICH IS READY TO BUILD AN IMAGE
 INSTALL DOCKER TO PERFORM DOCKER COMMANDS
