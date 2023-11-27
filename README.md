@@ -19,14 +19,13 @@ now install docker on system to perform operations
 sudo apt install docker.io -y
 ```
 Dockerfile is used to build image in docker 
-```bash
+NO need to copy this ,its already there
 FROM python:3                          #base image used 
 RUN pip install django==3.2            #commands to be executed
 COPY . .                               #for copying files  in container 
 CMD ["python","manage.py","runserver","0.0.0.0:8000"]   
 EXPOSE 8000                             #exposing port for serving  
 
-```
 docker needs to create image run,
 ```bash
 sudo docker build . -t todoapp
