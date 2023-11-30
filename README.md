@@ -87,7 +87,9 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 u will get the password
 copy and paste it in gui jenkins interface to start
+![jenkins](https://github.com/krishnareddy-2001/django_to_app/blob/7d3dd3021d30c1488990171e3347d06f87018174/staticfiles/Screenshot%202023-11-27%20132129.png)
 
+Now click on create job
 
 
 
